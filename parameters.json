@@ -1,0 +1,12 @@
+{
+  "webSiteName": {
+    "value": "web-app-python"
+  },
+  "hostingPlanName": {
+    "value": "web-app-python-plan"
+  },
+  "linuxFxVersion": {
+    "value": "PYTHON|3.10"
+  }
+}
+
