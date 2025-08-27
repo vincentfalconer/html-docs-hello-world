@@ -4,6 +4,11 @@ on:
   release:
     types: [published]
 
+permissions:
+  contents: read           # Required to checkout code
+  deployments: write       # Required for deployment actions
+  id-token: write          # Required if using OIDC authentication
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
