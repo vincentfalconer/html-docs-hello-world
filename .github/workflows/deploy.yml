@@ -5,6 +5,11 @@ on:
     branches:
       - master  # or 'main' if that's your default branch
 
+permissions:
+  contents: read  # Minimum required to checkout code
+  id-token: write # Required if you're using OIDC authentication
+  deployments: write  # Required for deployment-related actions
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
